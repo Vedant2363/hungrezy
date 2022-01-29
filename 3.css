@@ -1,0 +1,321 @@
+*{
+	box-sizing: 40%;
+	border:none;
+}
+body {
+	font-family: sans-serif;
+	background-image: url("4.png");
+	font-size: 16px;
+	color: #fff;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	content: "";
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: -1;
+}
+.form-box {
+	
+	background-color: rgba(0, 0, 0, 0.4);
+	border: 3px solid rgba(255, 255, 255, 0.384);
+	margin: auto auto;
+	padding: 40px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgb(255, 255, 255);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	color:#fff;
+	width: 375px;
+	height: 725px;
+	
+	
+}
+
+.form-box:before {
+	
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	content: "";
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: -1;
+	display: block;
+
+}
+.form-box .header-text {
+	font-size: 32px;
+	font-weight: 600;
+	padding-bottom: 10px;
+	text-align: center;
+}
+.placeholder{
+	color:#fff;
+}
+.form-box input {
+	background-color:rgba(221, 221, 221, 0);
+	
+	margin: 10px 0px;
+	padding: 10px;
+	width: 100%;
+	color:#fff;
+	font-size: 18px;
+	font-family: poppins;
+}
+.form-box input[type=checkbox] 
+{
+	display: none;
+	color:#fff;
+}
+.form-box label {
+	position: relative;
+	margin-left: 5px;
+	margin-right: 10px;
+	top: 5px;
+
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+.form-box label:before {
+	content: "";
+
+	width: 20px;
+	height: 20px;
+
+	position: absolute;
+	left: 0;
+	bottom: 1px;
+	
+}
+.form-box input[type=checkbox]:checked+label:before {
+	content: "\2713";
+	font-size: 20px;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	line-height: 20px;
+}
+.form-box span {
+	font-size: 14px;
+	
+}
+.form-box button {
+	background-color: deepskyblue;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	width: 50%;
+	font-size: 18px;
+	padding: 10px;
+	margin: 10px 70px;
+}
+span a {
+	color: #BBB;
+}
+
+
+
+.img{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.login-content{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	text-align: center;
+}
+
+.img img{
+	width: 500px;
+}
+
+form{
+	width: 360px;
+}
+
+.login-content img{
+    height: 100px;
+}
+
+.login-content h2{
+	margin: 15px 0;
+	color: rgb(255, 255, 255);
+	text-transform: uppercase;
+	font-size: 2.9rem;
+}
+
+.login-content .input-div{
+	position: relative;
+    display: grid;
+    grid-template-columns: 7% 93%;
+    margin: 25px 0;
+    padding: 5px 0;
+    border-bottom: 2px solid #d9d9d9;
+}
+
+.login-content .input-div.one{
+	margin-top: 0;
+}
+
+.i{
+	color: #d9d9d9;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.i i{
+	transition: .3s;
+	color: #d9d9d9;
+}
+
+.input-div > div{
+    position: relative;
+	height: 45px;
+}
+
+.input-div > div > h5{
+	position: absolute;
+	left: 10px;
+	top: -90%;
+	transform: translateY(-0%);
+	color: #d9d9d9;
+	font-size: 18px;
+	transition: .3s;
+	border:none;
+	outline: none;
+
+}
+
+
+.input-div:before, .input-div:after{
+	content: '';
+	position: absolute;
+	bottom: -2px;
+	width: 0%;
+	height: 2px;
+	background-color: #38d39f;
+	transition: .4s;
+	border:none;
+	outline: none;
+}
+
+.input-div:before{
+	right: 50%;
+	border:none;
+	outline: none;
+}
+
+.input-div:after{
+	left: 50%;
+	border:none;
+	outline: none;
+}
+
+.input-div.focus:before, .input-div.focus:after{
+	width: 50%;
+	border:none;
+	outline: none;
+}
+
+.input-div.focus > div > h5{
+	top: -5px;
+	font-size: 15px;
+	border:none;
+	outline: none;
+}
+
+.input-div.focus > .i > i{
+	color: #38d39f;
+	border:none;
+	outline: none;
+}
+
+.input-div > div > input{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
+	outline: none;
+	background: none;
+	padding: 0.5rem 0.7rem;
+	font-size: 1.2rem;
+	color: rgb(255, 255, 255);
+	font-family: 'poppins', sans-serif;
+}
+
+.input-div.pass{
+	margin-bottom: 4px;
+	color: #fff;
+}
+
+a{
+
+	text-align: right;
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+	font-size: 0.9rem;
+	transition: .3s;
+}
+
+
+
+
+
+@media screen and (max-width: 1000px){
+	form{
+		width: 290px;
+	}
+
+	.login-content h2{
+        font-size: 2.4rem;
+        margin: 8px 0;
+	}
+
+	.img img{
+		width: 400px;
+	}
+}
+
+@media screen and (max-width: 900px){
+
+	.img{
+		display: none;
+	}
+
+	.login-content{
+		justify-content: center;
+	}
+}
+
+
+::-webkit-input-placeholder { /* Edge */
+	color: white;
+	border: none;
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer */
+	color: white;
+	border: none;
+  }
+  
+  ::placeholder {
+	color: white;
+	border: none;
+  }

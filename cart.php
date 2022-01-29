@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HUNGREZY</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <!-- font awesome cdn link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <!-- custom css file link  -->
+  <link rel="stylesheet" href="css/styl.css">
+
+  <title>HUNGREZY</title>
+</head>
+
+<header>
+
+  <a href="#" class="logo"><i class="fas fa-utensils"></i> HUNGREZY</a>
+
+  <nav class="navbar">
+      <a class="active" href="#home">Menu</a>
+
+
+  </nav>
+
+  <div class="icons">
+      <i class="fas fa-bars" id="menu-bars"></i>
+      <i class="fas fa-search" id="search-icon"></i>
+      <a href="#" class="fas fa-home"></a>
+      <a href="#" class="fas fa-shopping-cart"></a>
+  </div>
+
+</header>
+<body>
+  <section class="menu" id="menu">
+    <br>
+    <br> 
+    <br>
+    <br>
+    <h1 class="heading"> Beverages </h1>
+  
+  
+   <div class="box-container">
+    <div class="box">
+      <div class="image">
+          <img src="images/m32.jpg" alt="">
+          <a href="#" class="fas fa-heart"></a>
+      </div>
+      <div class="content">
+          <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+          </div>
+          <h3>Gobi Manchurian</h3>
+          <p>Gobi Manchurian is a bunch of tree in the bowl.</p>
+          <span class="price">₹120.00</span>
+          <form action="manage_cart.php" method="POST">
+          <button type="submit"  name="Add_To_Cart" class="btn">Add To Cart</button>
+          <input type="hidden" name="Item_Name" value="Gobi Manchurian">
+          <input type="hidden" name="Price" value="120">
+          </form>
+
+</div></div>
+
+
+
+    <div class="box">
+      <div class="image">
+          <img src="images/m32.jpg" alt="">
+          <a href="#" class="fas fa-heart"></a>
+      </div>
+      <div class="content">
+          <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+          </div>
+          <h3>Watermelon Juice</h3>
+          <p>Gobi Manchurian is a bunch of tree in the bowl.</p>
+          <a href="#" class="btn">add to cart</a>
+          <span class="price">₹120.00</span>
+      </div>
+  </div>
+    <div class="box">
+      <div class="image">
+          <img src="images/M12.jpeg" alt="">
+          <a href="#" class="fas fa-heart"></a>
+      </div>
+      <div class="content">
+          <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+          </div>
+          <h3> Virgin Mojito</h3>
+          <p>Gobi Manchurian is a bunch of tree in the bowl.</p>
+          <a href="#" class="btn">add to cart</a>
+          <span class="price">₹120.00</span>
+      </div>
+  </div>
+
+      <div class="box">
+          <div class="image">
+              <img src="images/M30.jpg" alt="">
+              <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+              <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+              </div>
+              <h3>Cranberry Juice</h3>
+              <p>Knowledge does not keep any better than fish.</p>
+              <a href="#" class="btn">add to cart</a>
+              <span class="price">₹300.00</span>
+          </div>
+      </div>
+     
+
+  <div class="box">
+    <div class="image">
+        <img src="images/M34.jpg" alt="">
+        <a href="#" class="fas fa-heart"></a>
+    </div>
+    <div class="content">
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <h3>Chickoo Milkshake</h3>
+        <p>Gobi Manchurian is a bunch of tree in the bowl.</p>
+        <a href="#" class="btn">add to cart</a>
+        <span class="price">₹120.00</span>
+    </div>
+</div>
+<div class="box">
+  <div class="image">
+      <img src="images/M26.jpg" alt="">
+      <a href="#" class="fas fa-heart"></a>
+  </div>
+  <div class="content">
+      <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+
+      </div>
+      <h3>Strawbeery Shake</h3>
+      <p>The hardest part of dinner should be picking the toppings.</p>
+      <a href="#" class="btn">add to cart</a>
+      <span class="price">₹457.00</span>
+  </div>
+</div>
+
+<div class="box">
+  <div class="image">
+      <img src="images/M31.jpeg" alt="">
+      <a href="#" class="fas fa-heart"></a>
+  </div>
+  <div class="content">
+      <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+      </div>
+      <h3>Mango Smoothie</h3>
+      <p>Gobi Manchurian is a bunch of tree in the bowl.</p>
+      <a href="#" class="btn">add to cart</a>
+      <span class="price">₹120.00</span>
+  </div>
+</div>
+
+
+
+        <div class="box">
+            <div class="image">
+                <img src="images/M24.jpeg" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3>Sol Kadui</h3>
+                <p>We all need to make time for a burger once in a while.</p>
+                <a href="#" class="btn">add to cart</a>
+                <span class="price">₹250.00</span>
+            </div>
+        </div>
+  
+
+       
+    </div>
+  
+  </section>
+  
+
+
+  <section class="menu" id="menu">
+    <br>
+    <br> 
+    <br>
+    <br>
+    <h1 class="heading"> Starters </h1>
+  
+    <div class="box-container">
+    <div class="box">
+    <div class="image">
+        <img src="images/6549.jpeg" alt="">
+        <a href="#" class="fas fa-heart"></a>
+    </div>
+    <div class="content">
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <h3>Chicken Ghee Roast</h3>
+        <p>Gobi Manchurian is a bunch of tree in the bowl.</p>
+        <a href="#" class="btn">add to cart</a>
+        <span class="price">₹120.00</span>
+    </div>
+</div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/6541.jpeg" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>Chicken Kurkure</h3>
+                <p>Gobi Manchurian is a bunch of tree in the bowl.</p>
+                <a href="#" class="btn">add to cart</a>
+                <span class="price">₹120.00</span>
+            </div>
+        </div>
+  
+       
+      
+        <div class="box">
+            <div class="image">
+                <img src="images/6544.jpeg" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3>Prawns Balchao</h3>
+                <p>We all need to make time for a burger once in a while.</p>
+                <a href="#" class="btn">add to cart</a>
+                <span class="price">₹250.00</span>
+            </div>
+        </div>
+  
+        <div class="box">
+            <div class="image">
+                <img src="images/6545.jpeg" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>Mutton Kabab</h3>
+                <p>Knowledge does not keep any better than fish.</p>
+                <a href="#" class="btn">add to cart</a>
+                <span class="price">₹300.00</span>
+            </div>
+        </div>
+        <div class="box">
+          <div class="image">
+              <img src="images/6546.jpeg" alt="">
+              <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+              <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+              </div>
+              <h3>Chicken Lolipop</h3>
+              <p>Gobi Manchurian is a bunch of tree in the bowl.</p>
+              <a href="#" class="btn">add to cart</a>
+              <span class="price">₹120.00</span>
+          </div>
+      </div>
+      <div class="box">
+            <div class="image">
+                <img src="images/6543.jpeg" alt="">
+                <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="content">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+  
+                </div>
+                <h3>Mackerel Recheado</h3>
+                <p>The hardest part of dinner should be picking the toppings.</p>
+                <a href="#" class="btn">add to cart</a>
+                <span class="price">₹457.00</span>
+            </div>
+        </div>
+  
+      <div class="box">
+        <div class="image">
+            <img src="images/6542.jpeg" alt="">
+            <a href="#" class="fas fa-heart"></a>
+        </div>
+        <div class="content">
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <h3>Tandoori Momo</h3>
+            <p>Gobi Manchurian is a bunch of tree in the bowl.</p>
+            <a href="#" class="btn">add to cart</a>
+            <span class="price">₹120.00</span>
+        </div>
+    </div>
+    <div class="box">
+      <div class="image">
+          <img src="images/6548.jpeg" alt="">
+          <a href="#" class="fas fa-heart"></a>
+      </div>
+      <div class="content">
+          <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+          </div>
+          <h3>Sqiuids Batterfry</h3>
+          <p>Gobi Manchurian is a bunch of tree in the bowl.</p>
+          <a href="#" class="btn">add to cart</a>
+          <span class="price">₹120.00</span>
+      </div>
+  </div>
+
+    </div>
+  
+  </section>
+  
+
+
+<section class="menu" id="menu">
+  <br>
+  <br> 
+  <br>
+  <br>
+  <h1 class="heading"> Main Course </h1>
+
+  <div class="box-container">
+
+      <div class="box">
+          <div class="image">
+              <img src="images/pizza.jpg" alt="">
+              <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+              <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+
+              </div>
+              <h3>Pizza</h3>
+              <p>The hardest part of dinner should be picking the toppings.</p>
+              <a href="#" class="btn">add to cart</a>
+              <span class="price">₹457.00</span>
+          </div>
+      </div>
+      <div class="box">
+        <div class="image">
+            <img src="images/gm.jpg" alt="">
+            <a href="#" class="fas fa-heart"></a>
+        </div>
+        <div class="content">
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <h3>Gobi Manchurian</h3>
+            <p>Gobi Manchurian is a bunch of tree in the bowl.</p>
+            <a href="#" class="btn">add to cart</a>
+            <span class="price">₹120.00</span>
+        </div>
+    </div>
+    <div class="box">
+      <div class="image">
+          <img src="images/gm.jpg" alt="">
+          <a href="#" class="fas fa-heart"></a>
+      </div>
+      <div class="content">
+          <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+          </div>
+          <h3>Gobi Manchurian</h3>
+          <p>Gobi Manchurian is a bunch of tree in the bowl.</p>
+          <a href="#" class="btn">add to cart</a>
+          <span class="price">₹120.00</span>
+      </div>
+  </div>
+  <div class="box">
+    <div class="image">
+        <img src="images/gm.jpg" alt="">
+        <a href="#" class="fas fa-heart"></a>
+    </div>
+    <div class="content">
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <h3>Gobi Manchurian</h3>
+        <p>Gobi Manchurian is a bunch of tree in the bowl.</p>
+        <a href="#" class="btn">add to cart</a>
+        <span class="price">₹120.00</span>
+    </div>
+</div>
+<div class="box">
+  <div class="image">
+      <img src="images/gm.jpg" alt="">
+      <a href="#" class="fas fa-heart"></a>
+  </div>
+  <div class="content">
+      <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+      </div>
+      <h3>Gobi Manchurian</h3>
+      <p>Gobi Manchurian is a bunch of tree in the bowl.</p>
+      <a href="#" class="btn">add to cart</a>
+      <span class="price">₹120.00</span>
+  </div>
+</div>
+
+
+      <div class="box">
+          <div class="image">
+              <img src="images/burg.jpg" alt="">
+              <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+              <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+              </div>
+              <h3>Burger</h3>
+              <p>We all need to make time for a burger once in a while.</p>
+              <a href="#" class="btn">add to cart</a>
+              <span class="price">₹250.00</span>
+          </div>
+      </div>
+
+      <div class="box">
+          <div class="image">
+              <img src="images/12333.jpg" alt="">
+              <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+              <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+              </div>
+              <h3>Fish Thali</h3>
+              <p>Knowledge does not keep any better than fish.</p>
+              <a href="#" class="btn">add to cart</a>
+              <span class="price">₹300.00</span>
+          </div>
+      </div>
+
+      <div class="box">
+          <div class="image">
+              <img src="images/gm.jpg" alt="">
+              <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+              <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+              </div>
+              <h3>Gobi Manchurian</h3>
+              <p>Gobi Manchurian is a bunch of tree in the bowl.</p>
+              <a href="#" class="btn">add to cart</a>
+              <span class="price">₹120.00</span>
+          </div>
+      </div>
+
+     
+  </div>
+
+</section>
+
+
+<section class="menu" id="menu">
+  <br>
+  <br> 
+  <br>
+  <br>
+  <h1 class="heading"> Deserts </h1>
+
+  <div class="box-container">
+
+      <div class="box">
+          <div class="image">
+              <img src="images/pizza.jpg" alt="">
+              <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+              <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+
+              </div>
+              <h3>Pizza</h3>
+              <p>The hardest part of dinner should be picking the toppings.</p>
+              <a href="#" class="btn">add to cart</a>
+              <span class="price">₹457.00</span>
+          </div>
+      </div>
+
+      <div class="box">
+          <div class="image">
+              <img src="images/burg.jpg" alt="">
+              <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+              <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+              </div>
+              <h3>Burger</h3>
+              <p>We all need to make time for a burger once in a while.</p>
+              <a href="#" class="btn">add to cart</a>
+              <span class="price">₹250.00</span>
+          </div>
+      </div>
+
+      <div class="box">
+          <div class="image">
+              <img src="images/12333.jpg" alt="">
+              <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+              <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+              </div>
+              <h3>Fish Thali</h3>
+              <p>Knowledge does not keep any better than fish.</p>
+              <a href="#" class="btn">add to cart</a>
+              <span class="price">₹300.00</span>
+          </div>
+      </div>
+      <div class="box">
+        <div class="image">
+            <img src="images/gm.jpg" alt="">
+            <a href="#" class="fas fa-heart"></a>
+        </div>
+        <div class="content">
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <h3>Gobi Manchurian</h3>
+            <p>Gobi Manchurian is a bunch of tree in the bowl.</p>
+            <a href="#" class="btn">add to cart</a>
+            <span class="price">₹120.00</span>
+        </div>
+    </div>
+    <div class="box">
+      <div class="image">
+          <img src="images/gm.jpg" alt="">
+          <a href="#" class="fas fa-heart"></a>
+      </div>
+      <div class="content">
+          <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+          </div>
+          <h3>Gobi Manchurian</h3>
+          <p>Gobi Manchurian is a bunch of tree in the bowl.</p>
+          <a href="#" class="btn">add to cart</a>
+          <span class="price">₹120.00</span>
+      </div>
+  </div>
+  <div class="box">
+    <div class="image">
+        <img src="images/gm.jpg" alt="">
+        <a href="#" class="fas fa-heart"></a>
+    </div>
+    <div class="content">
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <h3>Gobi Manchurian</h3>
+        <p>Gobi Manchurian is a bunch of tree in the bowl.</p>
+        <a href="#" class="btn">add to cart</a>
+        <span class="price">₹120.00</span>
+    </div>
+</div>
+<div class="box">
+  <div class="image">
+      <img src="images/gm.jpg" alt="">
+      <a href="#" class="fas fa-heart"></a>
+  </div>
+  <div class="content">
+      <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+      </div>
+      <h3>Gobi Manchurian</h3>
+      <p>Gobi Manchurian is a bunch of tree in the bowl.</p>
+      <a href="#" class="btn">add to cart</a>
+      <span class="price">₹120.00</span>
+  </div>
+</div>
+
+      <div class="box">
+          <div class="image">
+              <img src="images/gm.jpg" alt="">
+              <a href="#" class="fas fa-heart"></a>
+          </div>
+          <div class="content">
+              <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+              </div>
+              <h3>Gobi Manchurian</h3>
+              <p>Gobi Manchurian is a bunch of tree in the bowl.</p>
+              <a href="#" class="btn">add to cart</a>
+              <span class="price">₹120.00</span>
+          </div>
+      </div>
+
+     
+  </div>
+
+</section>
+
+
+  </section>
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>
