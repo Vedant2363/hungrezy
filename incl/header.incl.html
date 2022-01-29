@@ -1,0 +1,110 @@
+<?php
+include_once __DIR__.'/config.incl.php';
+$current_user = array();
+
+function Page_Url() {
+    echo PAGE_URL;
+}
+
+if (file_exists('auth/auth.php')) {
+    include 'auth/auth.php';
+} elseif (file_exists('../auth/auth.php')) {
+    include '../auth/auth.php';
+} elseif (file_exists('../../auth/auth.php')) {
+    include '../../auth/auth.php';
+}
+$log = new logmein();
+$log->encrypt = true;
+if (!isset($_SESSION['loggedin']) || !$log->logincheck($_SESSION['loggedin'], "employees", "e_pass", "e_mail")) {
+    $log->loginform("login", "loginform", PAGE_URL . "auth/login.php");
+    exit();
+} else {
+    $current_user['email'] = $_SESSION['username'];
+    $current_user['name'] = $_SESSION['full_name'];
+    $current_user['role'] = $_SESSION['userlevel'];
+    list($singlename) = explode(' ', $current_user['name'], 3);
+}
+?>
+<!DOCTYPE HTML>
+<html>
+    <head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<title>SHATIXA DAIRY</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+        <!--<!-- for faster page loads these should be on the footer, but careful on having jQuery code in your pages if you do -->
+       <script type="text/javascript" src="<?php Page_Url() ?>js/jquery-1.8.2.js"></script>
+        <script type="text/javascript" src="<?php Page_Url() ?>js/bootstrap.js"></script>
+        <link type="text/css" rel="stylesheet" href="<?php Page_Url() ?>css/bootstrap.css" /> 
+        <link type="text/css" rel="stylesheet"	href="<?php Page_Url() ?>css/bootstrap-responsive.css" />
+          <link type="text/css" rel="stylesheet" href="<?php Page_Url() ?>css/main.css" />
+		  <body>
+<header>
+            <div id="user" class='pull-right'>
+                <a class="active" href=<?php Page_Url(); ?>auth/logout.php>logout</a>      
+            </div>
+        <a href="#" class="logo">SHATIXA DAIRY</a>
+				<nav>
+                <ul class="menu-toggle" >					
+					<li><a href="<?php Page_Url() ?>" class="active">HOME</a></li>
+					
+					<li><a href="#">DETAILS</a>
+					<div class="sub">
+						<ul>
+						<li><a href="<?php Page_Url() ?>cow/index.php"> COW</a></li>
+						<li><a href="<?php Page_Url() ?>calf/index.php"> CALF</a></li>
+						<li><a href="<?php Page_Url() ?>hiffer/index.php"> HIFFER</a></li>
+						<li><a href="<?php Page_Url() ?>employees/index.php"> EMPLOYEES</a></li>
+						</ul>
+					</div>
+					</li>
+					<li><a href="#">MEDICATION</a>
+					<div class="sub">
+						<ul>
+						<li><a href="<?php Page_Url() ?>medblc/index.php"> BALANCE STOCK</a></li>
+						<li><a href="<?php Page_Url() ?>history/index.php"> MEDICATION</a></li>
+						<li><a href="<?php Page_Url() ?>purchase/index.php"> PURCHASE</a></li>
+						</ul>
+					</div>
+					<li><a href="<?php Page_Url() ?>milk/index.php">MILK</a></li>
+					<li><a href="#">CONSUMPTION</a>
+					<div class="sub">
+						<ul>
+						<li><a href="<?php Page_Url() ?>consumption/index.php"> CONSUMPTION</a></li>
+						<li><a href="<?php Page_Url() ?>usage/index.php"> USAGE</a></li>
+						</ul>
+					</div></li>
+					<li><a href="#">REVENUE</a>
+					<div class="sub">
+						<ul>
+						<li><a href="<?php Page_Url() ?>rate/index.php"> REVENUE</a></li>
+						<li><a href="<?php Page_Url() ?>sale/index.php"> SALE</a></li>
+						<li><a href="<?php Page_Url() ?>fs/index.php"> FODDER SALE </a></li>
+						</ul>
+					</div></li>
+					<li><a href="#">EXPENDITURE</a>
+					<div class="sub">
+						<ul>
+						<li><a href="<?php Page_Url() ?>purchase/index.php"> PURCHASE</a></li>
+						<li><a href="<?php Page_Url() ?>equip/index.php"> EQUIPMENTS</a></li>
+						</ul>
+					</div></li>
+				</ul></header>
+                </ul>
+				<nav>
+            </div> <!--end navigation-->
+        </div>
+        <!--beginning of the pages' body-->
+        <div  id="main-content" class="modal-body" >
+		<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+			$('.menu-toggle').click(function(){
+				$('.menu-toggle').toggleClass('active')
+				$('nav').toggleClass('active')
+			})
+			})
+		</script>
+		</body>
+		
