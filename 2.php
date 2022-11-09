@@ -35,7 +35,6 @@
     <div class="icons">
         <i class="fas fa-bars" id="menu-bars"></i>
         <i  id="search-icon"></i>
-        <a href="admin.php" class="fas fa-user"></a>
         <a href="#" class="fas fa-home"></a>
         <a href="carte/index.php" class="fas fa-shopping-cart"></a>
     </div>
