@@ -408,9 +408,9 @@
             <div class="swiper-slide slide">
                 <i class="fas fa-quote-right"></i>
                 <div class="user">
-                    <img src="images/322.jpg" alt="">
+                    <img src="images/311.jpg" alt="">
                     <div class="user-info">
-                        <h3>Shivam Dessai</h3>
+                        <h3>Vedant Malkarnekar</h3>
                         <div class="stars">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -444,9 +444,9 @@
             <div class="swiper-slide slide">
                 <i class="fas fa-quote-right"></i>
                 <div class="user">
-                    <img src="images/3233.jpg" alt="">
+                    <img src="images/311.png" alt="">
                     <div class="user-info">
-                        <h3>Sharvani Salgaonkar</h3>
+                        <h3>Vedant Malkarnekar</h3>
                         <div class="stars">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
